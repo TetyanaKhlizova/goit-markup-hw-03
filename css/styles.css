@@ -43,12 +43,7 @@ body {
   color: var(--accent-color);
 }
 
-.navi-stud,
-.navi-port,
-.navi-cont,
-.navi-port-stud,
-.navi-port-port,
-.navi-port-cont,
+.navi-active,
 .contact-header {
   font-style: normal;
   font-weight: 500;
@@ -57,7 +52,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-color);
 }
+.navi-active:hover,
+.navi-active:focus,
+.navi .navi-stud.current,
+.navi .navi-port-port.current {
+  color: var(--accent-color);
+}
 
+/*.navi .navi-stud.current,
+.navi .navi-port-port.current {
+  color: var(--accent-color);
+}
 .navi-stud:visited,
 .navi-port-port:visited {
   color: var(--accent-color);
@@ -75,7 +80,8 @@ body {
 .navi-stud:active,
 .navi-port-port:active {
   color: var(--accent-color);
-}
+}*/
+
 .contact-header {
   color: var(--secondary-color);
 }
@@ -113,8 +119,15 @@ body {
   border: none;
 }
 
-.hidheader {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .peculiarities {
@@ -179,11 +192,7 @@ body {
 
 /*main portfolio section*/
 
-.btn-all,
-.btn-web,
-.btn-app,
-.btn-design,
-.btn-market {
+.btn-active {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -195,16 +204,8 @@ body {
   cursor: pointer;
 }
 
-.btn-all:hover,
-.btn-all:focus,
-.btn-web:hover,
-.btn-web:focus,
-.btn-app:hover,
-.btn-app:focus,
-.btn-design:hover,
-.btn-design:focus,
-.btn-market:hover,
-.btn-market:focus {
+.btn-active:hover,
+.btn-active:focus {
   color: var(--title-color);
   background-color: var(--accent-color);
 }
@@ -212,6 +213,15 @@ body {
   color: var(--title-color);
   background-color: var(--accent-color);
 }
+/*
+.btn-all:hover,
+.btn-all:focus,
+.btn-web:hover,
+.btn-active {
+  color: var(--title-color);
+  background-color: var(--accent-color);
+}*/
+
 .portfolio-list-name {
   font-style: normal;
   font-weight: bold;

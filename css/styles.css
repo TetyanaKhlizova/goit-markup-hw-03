@@ -113,13 +113,12 @@ body {
   background-color: var(--bkground-color-title);
 }
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-
+  margin: 0 auto 30px;
+  padding-top: 200px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-color);
@@ -141,6 +140,7 @@ body {
   padding: 10px 32px;
   display: inline-block;
   min-width: 200px;
+  margin-bottom: 200px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -216,7 +216,8 @@ img {
 }
 .position {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -324,7 +325,8 @@ img {
 
 .portfolio-list-type {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

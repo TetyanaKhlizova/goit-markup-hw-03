@@ -8,6 +8,7 @@
   --bkground-color-title: #2f303a;
   --bkground-color-teamandbtn: #f5f4fa;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --header-line-color: #ececec;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
 .page-header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #ececec;
+  border-bottom-color: var(--header-line-color);
 }
 
 .list {
@@ -133,13 +134,17 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-color);
-  background-color: var(--btn-color);
+  background-color: var(--accent-color);
   cursor: pointer;
   border: none;
   border-radius: 4px;
   padding: 10px 32px;
   display: inline-block;
   min-width: 200px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--btn-color);
 }
 
 .visually-hidden {
@@ -153,7 +158,14 @@ body {
   clip: rect(0 0 0 0);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .peculiarities {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -161,13 +173,28 @@ body {
   color: var(--primary-color);
 }
 .peculiarities-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   color: var(--secondary-color);
 }
+
+.section-activity {
+  padding-bottom: 94px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .activity,
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -175,14 +202,21 @@ body {
 }
 .team-section {
   background-color: var(--bkground-color-teamandbtn);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .surname {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--primary-color);
 }
 .position {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -192,13 +226,21 @@ body {
 /* footer section*/
 
 .footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bkground-color-title);
 }
 .logo-studio-footer {
   color: var(--title-color);
 }
+.footer-section .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 .location,
 .contact-footer {
+  display: inline-block;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -211,6 +253,11 @@ body {
 .contact-footer:hover,
 .contact-footer:focus {
   color: var(--accent-color);
+}
+
+.loc-footer,
+.mail-footer {
+  margin-bottom: 9px;
 }
 
 /*main portfolio section*/

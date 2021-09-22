@@ -262,6 +262,11 @@ img {
 
 /*main portfolio section*/
 
+.btn-filter {
+  padding-bottom: 16px;
+  margin-bottom: 34px;
+}
+
 .btn-active {
   font-family: inherit;
   font-weight: 500;
@@ -272,7 +277,25 @@ img {
   background-color: var(--bkground-color-teamandbtn);
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+  min-width: 73px;
 }
+/*.btn-all {
+  min-width: 73px;
+}
+.btn-web {
+  min-width: 128px;
+}
+.btn-app {
+  min-width: 145px;
+}
+.btn-design {
+  min-width: 103px;
+.btn-market {
+  min-width: 130px;
+}*/
 
 .btn-active:hover,
 .btn-active:focus {
@@ -283,16 +306,10 @@ img {
   color: var(--title-color);
   background-color: var(--accent-color);
 }
-/*
-.btn-all:hover,
-.btn-all:focus,
-.btn-web:hover,
-.btn-active {
-  color: var(--title-color);
-  background-color: var(--accent-color);
-}*/
 
 .portfolio-list-name {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -306,6 +323,8 @@ img {
 }
 
 .portfolio-list-type {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;

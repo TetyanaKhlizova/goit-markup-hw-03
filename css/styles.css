@@ -338,6 +338,8 @@ img {
 
 /*main portfolio section*/
 
+/*botton section*/
+
 .btn-filter {
   padding-bottom: 16px;
   margin-bottom: 34px;
@@ -382,10 +384,19 @@ img {
   color: var(--title-color);
   background-color: var(--accent-color);
 }
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* cards section*/
 
 .portfolio-list-name {
   margin-top: 0;
-  margin-bottom: 4px;
+  margin-bottom: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -396,15 +407,33 @@ img {
 
 .portfolio-list-link {
   text-decoration: none;
+  display: inline-block;
 }
 
 .portfolio-list-type {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 20px;
+  margin: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-color);
 }
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-list > .portfolio-item {
+  display: flex;
+  flex-basis: calc(100% / 3);
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+/*.portfolio-item {
+  margin-right: 0;
+}
+.portfolio-under-foto {
+  background-color: #188ce8;
+  width: 370px;
+}*/

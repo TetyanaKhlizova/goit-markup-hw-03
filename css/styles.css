@@ -67,6 +67,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navi-active:hover,
 .navi-active:focus,
@@ -97,13 +99,46 @@ body {
 .navi-port-port:active {
   color: var(--accent-color);
 }*/
-
+.logo-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-right: 43px;
+  margin-right: 50px;
+}
 .contact-header {
   color: var(--secondary-color);
 }
 .contact-header:hover,
 .contact-header:focus {
   color: var(--accent-color);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.navi {
+  display: flex;
+  align-items: center;
+}
+.navi-list:not(:first-child) {
+  margin-left: 50px;
+}
+.contact-header-list {
+  display: flex;
+  margin-left: auto;
+}
+.contact-list {
+  align-items: center;
+}
+.contact-list:not(:last-child) {
+  margin-right: 50px;
+}
+.contact {
+  display: flex;
 }
 
 /*main studio section*/
@@ -115,13 +150,13 @@ body {
 .hero-title {
   margin: 0 auto 30px;
   padding-top: 200px;
-  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-color);
+  max-width: 696px;
 }
 .hero-btn {
   font-family: inherit;
@@ -142,6 +177,7 @@ body {
   min-width: 200px;
   margin-bottom: 200px;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--btn-color);

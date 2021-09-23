@@ -9,6 +9,7 @@
   --bkground-color-teamandbtn: #f5f4fa;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --header-line-color: #ececec;
+  --card-set-gap: 30px;
 }
 
 body {
@@ -224,7 +225,7 @@ body {
   flex-basis: calc(100% / 4);
 }
 .peculiarities-list:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--card-set-gap);
 }
 
 /* activity section*/
@@ -256,7 +257,7 @@ img {
   flex-basis: calc(100% / 3);
 }
 .activity-list:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--card-set-gap);
 }
 
 /* team section*/
@@ -296,7 +297,7 @@ img {
   flex-basis: calc(100% / 4);
 }
 .team-list:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--card-set-gap);
 }
 
 /* footer section*/
@@ -421,19 +422,12 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 .portfolio-list > .portfolio-item {
   display: flex;
-  flex-basis: calc(100% / 3);
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-right: 0;
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
 }
-
-/*.portfolio-item {
-  margin-right: 0;
-}
-.portfolio-under-foto {
-  background-color: #188ce8;
-  width: 370px;
-}*/

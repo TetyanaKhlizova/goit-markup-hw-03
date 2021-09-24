@@ -122,7 +122,7 @@ body {
 }
 .header-nav {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
 }
 .navi {
   display: flex;
@@ -135,9 +135,9 @@ body {
   display: flex;
   margin-left: auto;
 }
-.contact-list {
+/*.contact-list {
   align-items: center;
-}
+}*/
 .contact-list:not(:last-child) {
   margin-right: 50px;
 }

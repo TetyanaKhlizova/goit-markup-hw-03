@@ -13,6 +13,8 @@
   --card-set-gap: 30px;
   --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  --box-shadow-portfolio: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 body {
@@ -65,6 +67,7 @@ body {
 
 .navi-active,
 .contact-header {
+  display: block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -105,9 +108,8 @@ body {
 }*/
 .logo-header {
   padding-top: 24px;
-  padding-bottom: 25px;
-  padding-right: 43px;
-  margin-right: 50px;
+  padding-bottom: 24px;
+  margin-right: 93px;
 }
 .contact-header {
   color: var(--secondary-color);
@@ -148,7 +150,12 @@ body {
 /*main studio section*/
 
 .hero {
+  display: flex;
+  height: 600px;
+  align-items: center;
   background-color: var(--bkground-color-title);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-top: 0;
@@ -181,7 +188,7 @@ body {
 .hero-container {
   max-width: 696px;
   text-align: center;
-  padding: 200px 0;
+  /*padding: 200px 0;*/
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -224,11 +231,10 @@ body {
 }
 .peculiarities-set {
   display: flex;
+  margin-right: calc(-1 * var(--card-set-gap));
 }
 .peculiarities-set > .peculiarities-list {
-  flex-basis: calc(100% / 4);
-}
-.peculiarities-list:not(:last-child) {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
 }
 
@@ -256,11 +262,10 @@ img {
 }
 .activity-set {
   display: flex;
+  margin-right: calc(-1 * var(--card-set-gap));
 }
 .activity-set > .activity-list {
-  flex-basis: calc(100% / 3);
-}
-.activity-list:not(:last-child) {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
 }
 
@@ -293,17 +298,18 @@ img {
 
 .team-set {
   display: flex;
+  margin-right: calc(-1 * var(--card-set-gap));
 }
 .team-set > .team-list {
-  flex-basis: calc(100% / 4);
-}
-.team-list:not(:last-child) {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
 }
+
 .team-card-content {
-  padding: 30px;
+  padding: 30px 0;
 }
 .team-card {
+  background: var(--title-color);
   box-shadow: var(--box-shadow);
   border-radius: 0px 0px 4px 4px;
 }
@@ -319,7 +325,7 @@ img {
 }
 .footer-section .logo {
   display: inline-block;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .location,
@@ -349,8 +355,7 @@ img {
 /*botton section*/
 
 .btn-filter {
-  padding-bottom: 16px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .btn-active {
@@ -442,4 +447,8 @@ img {
   padding: 20px 24px;
   border: 1px solid var(--border-portfolio-card);
   border-top: none;
+}
+.portfolio-card:hover,
+.portfolio-card:focus {
+  box-shadow: var(--box-shadow-portfolio);
 }

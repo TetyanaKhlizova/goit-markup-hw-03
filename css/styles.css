@@ -325,7 +325,7 @@ img {
 }
 .footer-section .logo {
   display: inline-block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .location,
